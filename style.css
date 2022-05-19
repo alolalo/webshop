@@ -1,0 +1,131 @@
+/* Revolver-DS; just Lock, Load & Ship your headless DS! */
+@layer reset, lock, load, ship, preset;
+
+
+@import url('../css/rds--reset.css') layer(reset);
+@import url('lock.css') layer(lock);
+@import url('load.css') layer(load);
+@import url('ship.css') layer(ship);
+
+
+/* Why an ANONYMOUS layer? It works the same as a named layer, except without a name
+you can't add anything to it later. This is considered a healthy seperation of concern
+before any authored & class-based cascading kicks in. */
+@layer {
+p, h1, h2, h3 {
+    max-width: clamp(46ch, 50vw, 68ch);
+    margin-inline-start: clamp(2vw, 2.5vw, 3vw);
+}
+
+h1, h2, h3 {
+    margin-block-end: clamp(-0.35vw, -0.6vw, -1vw);
+    white-space: nowrap;
+}
+
+p, h2, h3, ul, ol {
+    font-family: "IBM Plex Mono", Arial, monospace;
+}
+
+p {
+    line-height: 3.6ex;
+    font-weight: 400;
+}
+
+b {
+    font-weight: 900;
+}
+
+i {
+    font-style: italic;
+}
+
+a, u {
+    text-underline-offset: calc(1ex / 4);
+}
+
+ul > *::before, ol > *::before {
+    content: "\1f44D";
+    margin-inline-end: 0.75ch;
+    drop-shadow: 0.5ch 0.5ch 0.75ch rgba(0, 0, 0, 0.65);
+}
+ul, ol {
+list-style: none;
+line-height: 3.5ex;
+}
+
+li {
+    max-width: clamp(46ch, 50vw, 68ch);
+}
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    font-size: 1.1em;
+  }
+
+h1, h2 {
+    font-family: "Major Mono Display", Helvetica, monospace;
+    margin-block-start: min(3vw, 5vw);
+    margin-block-end: min(2vw, 4vw);
+    font-weight: 400;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--uc__background);
+    width: 100%;
+    padding-block-end: min(5vw, 10vw);
+    padding-block-start: min(1vw, 3vw);
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: 500;
+}
+
+img {
+    max-width: min(80%, 800px);
+    margin-inline-start: clamp(2vw, 2.5vw, 3vw);
+    margin-block-start: clamp(1vw, 1.5vw, 2vw);
+}
+
+:where(.rds > *:not(.rds--freeze)) {
+    color: var(--uc__text);
+}
+}
+
+/* **** CHEAT SHEET ******* */
+/* COPYRIGHT NOTICE & LICENSE AGREEMENT NOTICE
+
+.: B.O.U.~M :. tokensets copyright protected in addition to the Creative Commons 4.0 CC-BA-NC-SA license agreement that protects creatives in the field of digital. A copy can be found here: https://followgu.us/license
+
+The addition is simple; BOUM-tokens are tokens that are attached at the end of your design tokens. These tokens are copyright protected so your design system work created from it automatically gets legal protection, because the BOUM-tokens you use are protected by this very legal document. 
+
+You in turn have a license or not, which is free to get from the website https://followgu.us/boum.
+
+And if you're using it for education or a CodePen, it's totally not neccesary to get a license unless you intend to publish the entire design token convention. 
+Accreditation (https://justgu.us) with a notification of the license (https://followgu.us/boum) is enough if you don't need to be licensed, but still want to do the right thing.
+*/
+/*  .: HOW-TO:  Read & Write BOUM-tokens :.
+
+BOUM uses a relative center; the BASE. 
+Need a higher value?
+Just go On Base from your relative base. 
+Need less? 
+Just godown Under Base from whwere you are. 
+Untill you hit the MAX on either side after three.
+
+Design language is a huge part of .: B.O.U.~M :., if not everything.
+That's why RDS keeps principles simple and sticks to these basics;
+
+0. No Docs, Strictly Comments & Principles
+1. No numbers, Just semantics
+2. No more Than 3 On or Under, plus 1 modifier per token
+3. Always comment abbreviations & exceptions
+4. Always comment ...
+5. Keep The Basics Fresh!
+
+/* *** END OF CHEAT SHEET *** */

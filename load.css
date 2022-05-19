@@ -1,0 +1,78 @@
+/* LOAD.css is specifically used to lock in all your Literal & Nested tokens that you declared in LOCK.css. These are referred to as "Relative Design Tokens" as they hold relative values. If you followed the rule of _underscoring in lock.css, in load.css you can now use the same name minus the _underscore. This makes sure that you know exactly which layer or css-file the token is coming from; lock or load. */
+        .rds:not(.rds--freeze) {
+    /* Nested Utility Colors, using the parent-name as selector. */
+     /* color primary, abbreviated to first-letters */
+        --cp__mob: var(--_cp__mob);
+        --cp__ooob: var(--_cp__ooob);
+        --cp__oob: var(--_cp__oob);
+        --cp__ob: var(--_cp__ob);
+        --cp: var(--_cp);
+        --cp__ub: var(--_cp__ub);
+        --cp__uub: var(--_cp__uub);
+        --cp__uuub: var(--_cp__uuub);
+        --cp__mub: var(--_cp__mub);
+    
+        /* color secundairy, abbreviated to first-letters */
+        --cs__mob: var(--_cs__mob);
+        --cs__ooob: var(--_cs__ooob);
+        --cs__oob: var(--_cs__oob);
+        --cs__ob: var(--_cs__ob);
+        --cs: var(--_cs);
+        --cs__ub: var(--_cs__ub);
+        --cs__uub: var(--_cs__uub);
+        --cs__uuub: var(--_cs__uuub);
+        --cs__mub: var(--_cs__mub);
+    
+        /* color tertiary, abbreviated to first-letters */
+        --ct__mob: var(--_ct__mob);
+        --ct__ooob: var(--_ct__ooob);
+        --ct__oob: var(--_ct__oob);
+        --ct__ob: var(--_ct_oob);
+        --ct: var(--_ct);
+        --ct__ub: var(--_ct__ub);
+        --ct__uub: var(--_ct__uub);
+        --ct__uuub: var(--_ct__uuub);
+        --ct__mub: var(--_ct__mub);
+    
+        /* color quarternairy, abbreviated to first-letters */
+        --cq__mob: var(--_cq__mob);
+        --cq__ooob: var(--_cq__ooob);
+        --cq__oob: var(--_cq__oob);
+        --cq__ob: var(--_cq__ob);
+        --cq: var(--_cq);
+        --cq__ub: var(--_cq__ub);
+        --cq__uub: var(--_cq__uub);
+        --cq__uuub: var(--_cq__uuub);
+        --cq__mub: var(--_cq__mub);   
+    
+        /* color white, abbreviated to first-letters */
+        --cw__mob: var(--_cw__mob);
+        --cw: var(--_cw);
+        --cw__mub: var(--_cw__mub); 
+    
+        /* color gray, abbreviated to first-letters */
+        --cg__mob: var(--_cg__mob);
+        --cg: var(--_cg);
+        --cg__mub: var(--_cg__mub);
+    
+        /* color black, abbreviated to first-letters */
+        --cb__mob: var(--_cb__mob);
+        --cb: var(--_cb);
+        --cb__mub: var(--_cb__mub);
+
+        /* utility token Q: store any token in this token for inline use of style */
+        --Q: var(--_Q);
+
+        /* spacing utility, abbreviated cascading t-shirt sizes */
+        --space-XX: clamp(0.13rem, calc(0.11rem + 0.06vw), 0.19rem);
+        --space-XS: clamp(0.25rem, calc(0.23rem + 0.13vw), 0.38rem);
+        --space-SS: clamp(0.50rem, calc(0.44rem + 0.31vw), 0.81rem);
+        --space-SM: clamp(0.69rem, calc(0.59rem + 0.50vw), 1.19rem);
+        --space-M: clamp(1.0rem, calc(0.81rem + 0.63vw), 1.56rem);
+        --space-MM: clamp(1.44rem, calc(1.25rem + 0.94vw), 2.38rem);
+        --space-ML: clamp(1.88rem, calc(1.63rem + 1.25vw), 3.13rem);
+        --space-LL: clamp(2.81rem, calc(2.44rem + 1.88vw), 4.69rem);
+        --space-LD: clamp(3.75rem, calc(3.25rem + 2.50vw), 6.25rem);
+        --space-DD: clamp(5.63rem, calc(4.88rem + 3.75vw), 9.38rem);
+        --space-XD: clamp(7.50rem, calc(6.50rem + 5.00vw), 12.50rem);
+        }

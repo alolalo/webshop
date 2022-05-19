@@ -1,0 +1,90 @@
+/* LOCK.css is specifically used to lock in all your hard-coded values. These are referred to as "Literal Design Tokens" as they hold literal values. It is recommended that you annotate every _literal _token with an _underscore before the prefix. This is so you allways know which css file, and which layer the token comes from in the order of loading or when you're debugging.*/
+
+    .rds:not(.rds--freeze) {
+    --_cp__mob: ;
+    --_cp__ooob: ;
+    --_cp__oob: ;
+    --_cp__ob: ;
+    --_cp: #22cafe;
+    --_cp__ub: ;
+    --_cp__uub: ;
+    --_cp__uuub: ;
+    --_cp__mub: ;
+
+    /* color secundairy, abbreviated to first-letters */
+    --_cs__mob: ;
+    --_cs__ooob: ;
+    --_cs__oob: ;
+    --_cs__ob: ;
+    --_cs: #face22;
+    --_cs__ub: ;
+    --_cs__uub: ;
+    --_cs__uuub: ;
+    --_cs__mub: ;
+
+    /* color tertiary, abbreviated to first-letters */
+    --_ct__mob: ;
+    --_ct__ooob: ;
+    --_ct__oob: ;
+    --_ct_oob: ;
+    --_ct: #22face;
+    --_ct__ub: ;
+    --_ct__uub: ;
+    --_ct__uuub: ;
+    --_ct__mub: ;
+
+    /* color quarternairy, abbreviated to first-letters */
+    --_cq__mob: ;
+    --_cq__ooob: ;
+    --_cq__oob: ;
+    --_cq__ob: ;
+    --_cq: #fa22ce;
+    --_cq__ub: ;
+    --_cq__uub: ;
+    --_cq__uuub: ;
+    --_cq__mub: ;
+
+    /* color white, abbreviated to first-letters */
+    --_cw__mob: ;
+    --_cw: white;
+    --_cw__mub
+
+    /* abbreviated to  */
+    --_cg__mob;
+    --_cg;
+    --_cg__mub;
+
+    /* color black, abbreviated to first-letters */
+    --_cb__mob: ;
+    --_cb: ;
+    --_cb__mub: ;
+
+    /* utility color succes, abbreviated to first-letters */
+    --_ucs__mob: ;
+    --_ucs:  ;
+    --_ucs__mub:  ;
+
+    /* utility color notification, abbreviated to first-letters */
+    --_ucn__mub: ;
+    --_ucn:  ;
+    --_ucn__mob: ;
+
+    /* utility color warning, abbreviated to first-letters */
+    --_ucw__mob: ;
+    --_ucw:  ;
+    --_ucw__mub: ;
+
+    /* utility color error, abbreviated to first-letters */
+    --_uce__mob: ;
+    --_uce:  ;
+    --_uce__mub: ;
+
+    /* utility token Q: store any color in this CAPITALIZED token for inline use of style */
+    --Q: ;
+}
+
+@property --Q {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: #face22;
+  }
